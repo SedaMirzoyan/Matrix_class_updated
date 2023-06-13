@@ -93,6 +93,7 @@ Matrix_class& Matrix_class::operator=(const Matrix_class& ob)
         this->row = ob.row;
         this->column = ob.column;
 
+        delete []p;
         this->p = new int* [row];
 
         for (int i = 0; i < row; i++)
