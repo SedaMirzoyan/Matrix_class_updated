@@ -10,7 +10,7 @@ int main()
 	std::cout << "Enter the size of a matrix\n";
 	std::cin >> size;
 
-	Matrix_class ob1;
+	Matrix_class ob1(size, size);
 
 	try {
 		ob1.getRow();
